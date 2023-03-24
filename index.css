@@ -50,6 +50,12 @@
     position: absolute;
     top: 30%;
 }
+.menu_toggler {
+    width: 30px;
+    height: 30px;
+    margin-top: -20px;
+    display: none;
+}
 .left-side {
     margin-left: 6%;
 }
@@ -137,6 +143,13 @@
 }
 .right-side img {
     width: 60px;
+}
+.container{
+    width: 100%;
+}
+
+.menu_toggler {
+    display: block;
 }
 
     .menu {
