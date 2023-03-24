@@ -108,10 +108,29 @@
 }
 @media(max-width:1295px) {
     .navbar .logo {
-     width: 130px;
+        width: 130px;
 }
-.left-side h1 {
-    font-size: 60px;
-    line-height: 90px; 
+    .left-side h1 {
+        position: absolute;
+        text-align: center ;
+        font-size: 28px;
+        line-height: 30px; 
+        left: 50%;
+        transform: translate(-50%);
+        top: 20%;
+        color: #b5b5b5;
+        -webkit-text-stroke: none;
 }
+.right-side p {
+    position: absolute;
+    bottom: -60%;
+    width: 100%;
+}
+.right-side img {
+   display: block;
+   margin: 0 auto;
+}
+    .menu {
+        display: none;
+    }
 }
