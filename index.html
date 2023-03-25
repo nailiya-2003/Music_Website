@@ -11,10 +11,9 @@
     <div class="container">   
         <div class="navbar">
             <img src="images/logo.png" alt="logo" class="logo">
-            <div class="menu_toggler">
-                <img src="images/bars-solid.svg" alt="icon">
+            <div class="menu_toggler active" onclick="togglemenu()">
             </div>
-            <div class="menu">
+            <div class="menu active" onclick="togglemenu()">
             <ul>
                 <li><a href="">HOME</a></li>
                 <li><a href="">ABOUT</a></li>
@@ -50,8 +49,13 @@
                 icon.src = "images/play.png";
             }
         }
-         function togglermenu() {
-           var
+    </script>
+    <script type="text/javascript">
+        function togglemenu() {
+           var menu_toggler = document.querySelector('.menu_toggler')
+           var menu_toggler = document.querySelector('.menu')
+           menu_toggler.classList.toggle('active')
+           menu.classList.toggle('active')
         }
     </script>
 </body>
