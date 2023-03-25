@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome-free-6.3.0-web/css/all.css">
     <link rel="stylesheet" href="index.css">
     <title>Music Website</title>
 </head>
@@ -11,15 +12,15 @@
     <div class="container">   
         <div class="navbar">
             <img src="images/logo.png" alt="logo" class="logo">
-            <div class="menu_toggler active" onclick="togglemenu()">
+            <div class="menu_toggle active" onclick="togglemenu()">
             </div>
             <div class="menu active" onclick="togglemenu()">
             <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">ABOUT</a></li>
-                <li><a href="">SPECIFICATIONS</a></li>
-                <li><a href="">PRODUCTS</a></li>
-                <li><a href="">CONNECT</a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SPECIFICATIONS</a></li>
+                <li><a href="#">PRODUCTS</a></li>
+                <li><a href="#">CONNECT</a></li>
             </ul>
         </div>
     </div>
@@ -52,9 +53,9 @@
     </script>
     <script type="text/javascript">
         function togglemenu() {
-           var menu_toggler = document.querySelector('.menu_toggler')
-           var menu_toggler = document.querySelector('.menu')
-           menu_toggler.classList.toggle('active')
+           var menu_toggle = document.querySelector('.menu_toggle')
+           var menu = document.querySelector('.menu')
+           menu_toggle.classList.toggle('active')
            menu.classList.toggle('active')
         }
     </script>

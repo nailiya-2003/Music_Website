@@ -165,24 +165,38 @@
 .container{
     width: 100%;
 }
-.menu_toggler {
-    background: url('images/bars-solid.svg');
-    background-repeat: no-repeat;
-    background-size: 20px;
+.menu_toggle {
+    position: relative;
     display: block;
+    margin: 20px;
+    width: 40px;
+    height: 40px;
+    float: right;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(0, 106, 255);
+    
 }
-.menu_toggler.active {
-    background: url("images/xmark-solid.svg");
-    background-repeat: no-repeat;
-    background-size: 20px;
-    background-position: center;
+.menu_toggle::before {
+    position: absolute;
+    content: '\f0c9';
+    font-family: 'FontAwesome';
+    color: #feadbd;
 }
+.menu_toggle.active::before {
+    display: none;
+}
+
 .menu {
     display: none;
 }
 .menu.active {
     display: block;
     width: 100%;
+}
+.navbar ul li {
+    display: block;
+    margin-left: 70px;
 }
 
 }
